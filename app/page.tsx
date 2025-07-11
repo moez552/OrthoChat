@@ -94,7 +94,7 @@ export default function HomePage() {
           <div className="flex items-center space-x-2">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg text-primary-foreground">
               
-              <Image src="/logo.png" alt="Logo" width={44} height={44} className="ml-2" />
+              <Image src="/logo.png" alt="Logo" width={44} height={44} className="ml-2" loading="lazy" />
             </div>
             <span className="text-xl font-bold">OrthoChat</span>
           </div>
@@ -178,6 +178,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-3xl" />
                 <Image
+                  loading="lazy"
                   src="/banner.png?height=400&width=600"
                   alt="WhatsApp AI Bot in Action"
                   width={400}
@@ -627,6 +628,7 @@ export default function HomePage() {
             </div>
             <div className="flex items-center justify-center">
               <Image
+                loading="lazy"
                 src="/image.png?height=500&width=700"
                 alt="Our Team"
                 width={700}
@@ -853,7 +855,7 @@ export default function HomePage() {
         <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <div className="flex items-center space-x-2">
             <div className="flex h-6 w-6 items-center justify-center rounded-lg text-primary-foreground">
-            <Image src="/logo.png" alt="Logo" width={44} height={44} className="ml-2" />
+            <Image loading="lazy" src="/logo.png" alt="Logo" width={44} height={44} className="ml-2" />
             </div>
             <span className="font-bold">OrthoChat</span>
           </div>
